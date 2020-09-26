@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#673AB7</color>
+    <color name="colorPrimaryDark">#512DAB</color>
+    <color name="colorAccent">#FF5252</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGreen">#32CD32</color>
+    <color name="startSoft">#a358e8</color>
+    <color name="endBlue">#4d4dff</color>
+    <color name="profileIco">#800080</color>
+    <color name="chatbox1">#4d004d</color>
+</resources>

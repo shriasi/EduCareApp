@@ -1,0 +1,122 @@
+{
+  "project_info": {
+    "project_number": "431836148286",
+    "firebase_url": "https://spytalk-87d37.firebaseio.com",
+    "project_id": "spytalk-87d37",
+    "storage_bucket": "spytalk-87d37.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:431836148286:android:cc0abc777a3b93e114976f",
+        "android_client_info": {
+          "package_name": "asiri.viralapps.com.HairRemoverPrank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "431836148286-ka2sh0mdbsvusv81q2te8q4g306t8dca.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "asiri.viralapps.com.HairRemoverPrank",
+            "certificate_hash": "596c3d4cb47b74b6118b6cbac9c5888444a5b379"
+          }
+        },
+        {
+          "client_id": "431836148286-9hqg54vh1cdi04rn019o7hf59m978gs7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "asiri.viralapps.com.HairRemoverPrank",
+            "certificate_hash": "3f4fb049219f53c318d2b0c8af7c596b3113bf33"
+          }
+        },
+        {
+          "client_id": "431836148286-vccv5tgeil4jqsrn3vfupiq3u4cgf8th.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJ_TF4HX-IP7Hm5zTk3dghuceD0v86rLY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "431836148286-r304s522737j20vnp4hgelfp2a1rtlrg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:431836148286:android:a280a8060a7cdcd814976f",
+        "android_client_info": {
+          "package_name": "com.asiri.eduappnavigation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "431836148286-vccv5tgeil4jqsrn3vfupiq3u4cgf8th.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJ_TF4HX-IP7Hm5zTk3dghuceD0v86rLY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "431836148286-r304s522737j20vnp4hgelfp2a1rtlrg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:431836148286:android:c35078d0e389102c14976f",
+        "android_client_info": {
+          "package_name": "com.org.couplify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "431836148286-fnl39rne61lgrcoctbc7a8fdrbdqi1tp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.org.couplify",
+            "certificate_hash": "6021c75b709eadb3ca0c72e9571ea3e14a8c851c"
+          }
+        },
+        {
+          "client_id": "431836148286-vccv5tgeil4jqsrn3vfupiq3u4cgf8th.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJ_TF4HX-IP7Hm5zTk3dghuceD0v86rLY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "431836148286-r304s522737j20vnp4hgelfp2a1rtlrg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

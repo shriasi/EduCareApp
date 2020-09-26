@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/menuProfile">
+
+    <fragment
+        android:id="@+id/menuProfile"
+        android:name="com.asiri.eduappnavigation.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile"
+    />
+    <fragment
+        android:id="@+id/menuTeachersProfile"
+        android:name="com.asiri.eduappnavigation.teacherProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_teacher_profile"
+        />
+    <fragment
+        android:id="@+id/menuChat"
+        android:name="com.asiri.eduappnavigation.ChatFragment"
+        android:label="Chat"
+        tools:layout="@layout/fragment_chat"
+        />
+    <fragment
+        android:id="@+id/menuSettings"
+        android:name="com.asiri.eduappnavigation.SettingsFragment"
+        android:label="Chat"
+        tools:layout="@layout/fragment_chat"
+        />
+
+</navigation>

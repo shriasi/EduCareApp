@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuProfile"
+        android:icon="@drawable/profile"
+        android:title="Profile" />
+
+    <item
+        android:id="@+id/menuChat"
+        android:icon="@drawable/chat"
+        android:title="@string/chat" />
+
+    <item
+        android:id="@+id/menuSubjects"
+        android:icon="@drawable/subjects"
+        android:title="@string/subjects" />
+
+    <item
+        android:id="@+id/menuPlaces"
+        android:icon="@drawable/place"
+        android:title="@string/teaching_places" />
+
+    <item
+        android:id="@+id/menuTeachers"
+        android:icon="@drawable/teacher"
+        android:title="@string/teachers" />
+    <item
+        android:id="@+id/menuTeachersProfile"
+        android:icon="@drawable/teacher"
+        android:title="@string/teacher_profile" />
+    <item
+        android:id="@+id/menuSettings"
+        android:icon="@drawable/teacher"
+        android:title="@string/settings" />
+
+    <item
+        android:id="@+id/menuLogout"
+        android:icon="@drawable/logout"
+        android:title="@string/logout" />
+
+</menu>

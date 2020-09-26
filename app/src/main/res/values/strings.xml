@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">EduappNavigation</string>
+    <string name="chat">Chat</string>
+    <string name="subjects">Subjects</string>
+    <string name="teaching_places">Teaching places</string>
+    <string name="teachers">Teachers</string>
+    <string name="logout">Logout</string>
+    <string name="dilinis">diliniS</string>
+    <string name="verified">Verified</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="profile">profile</string>
+    <string name="dilini_senevirathna">Dilini Senevirathna</string>
+    <string name="k_national_school">K/national School</string>
+    <string name="_0714556677">0714556677</string>
+    <string name="grade_10">Grade 10</string>
+    <string name="no_14_new_road_colombo_7">no 14,new road,Colombo-7</string>
+    <string name="subjects_science_mathematics">Subjects: Science,Mathematics</string>
+    <string name="settings">Settings</string>
+    <string name="mr_dissanayaka">Mr.Dissanayaka</string>
+    <string name="teacher">Teacher</string>
+    <string name="basn_gmail_com">basn@gmail.com</string>
+    <string name="_0781234567">0781234567</string>
+    <string name="teacher_profile">Teacher Profile</string>
+    <string name="school_papers">School Papers</string>
+    <string name="e_books">E Books</string>
+    <string name="ebooks">EBooks</string>
+    <string name="model_papers">Model Papers</string>
+    <string name="memory_maps">Memory Maps</string>
+    <string name="resources_mathematics">Resources: Mathematics</string>
+    <string name="subject_mathematics">Subject:Mathematics</string>
+    <string name="resources">Resources</string>
+    <string name="welcome_to">Welcome To</string>
+    <string name="student_profile">Student Profile</string>
+    <string name="_20_august_2020">20 August 2020</string>
+    <string name="yes_sir_thank_you">Yes Sir.Thank you</string>
+    <string name="educare">EduCare</string>
+    <string name="got_to_dashboard">Got to Dashboard</string>
+    <string name="change_preferences">Change Preferences</string>
+    <string name="other_settings">Other Settings</string>
+    <string name="notifications">Notifications</string>
+    <string name="language_settings">Language Settings</string>
+    <string name="go_to_profile">Go to Profile</string>
+    <string name="save">Save</string>
+    <string name="webId">431836148286-vccv5tgeil4jqsrn3vfupiq3u4cgf8th.apps.googleusercontent.com</string>
+
+</resources>
