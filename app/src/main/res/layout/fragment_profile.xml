@@ -174,7 +174,8 @@
             android:layout_height="50sp"
             android:layout_marginTop="20dp"
             android:layout_gravity="center_horizontal"
-            android:text="@string/got_to_dashboard"/>
+            android:text="@string/got_to_dashboard"
+            android:id="@+id/gotodashboard"/>
     </LinearLayout>
 
 

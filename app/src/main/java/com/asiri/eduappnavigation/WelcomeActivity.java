@@ -13,7 +13,6 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -120,10 +119,10 @@ public class WelcomeActivity extends AppCompatActivity {
                         Toast.LENGTH_LONG).show();
 
                 //start new activity
-                Intent myIntent = new Intent(CurrentActivity.this, NextActivity.class);
-                myIntent.putExtra("key", value); //Optional parameters
-                CurrentActivity.this.startActivity(myIntent);
-                
+                Intent myIntent = new Intent(WelcomeActivity.this, EditProfileActivity.class);
+//               myIntent.putExtra("sign_in_button", value); //Optional parameters
+                WelcomeActivity.this.startActivity(myIntent);
+
             } catch (ApiException e) {
                 Toast.makeText(WelcomeActivity.this, "Sign In Failed!",
                         Toast.LENGTH_LONG).show();

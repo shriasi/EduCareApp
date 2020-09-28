@@ -43,5 +43,7 @@
     <string name="go_to_profile">Go to Profile</string>
     <string name="save">Save</string>
     <string name="webId">431836148286-vccv5tgeil4jqsrn3vfupiq3u4cgf8th.apps.googleusercontent.com</string>
-
+    <string name="displaydisplay">displaydisplay</string>
+    <string name="main_dashboard">Main dashboard</string>
+    <string name="add_notes">Add notes</string>
 </resources>
