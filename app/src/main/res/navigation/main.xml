@@ -12,6 +12,12 @@
         tools:layout="@layout/fragment_profile"
     />
     <fragment
+        android:id="@+id/dashboard"
+        android:name="com.shrimali.eduapp.DashboardFragment"
+        android:label="Go to Dashboard"
+        tools:layout="@layout/fragment_dashboard"
+        />
+    <fragment
         android:id="@+id/menuTeachersProfile"
         android:name="com.shrimali.eduapp.teacherProfileFragment"
         android:label="Profile"

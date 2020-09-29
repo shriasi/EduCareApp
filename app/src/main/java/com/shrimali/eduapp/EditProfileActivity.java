@@ -9,6 +9,7 @@ package com.shrimali.eduapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.app.backup.SharedPreferencesBackupHelper;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -21,6 +22,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.shrimali.logic.SharedPreferenceHelper;
 import com.squareup.picasso.Picasso;
 
 
@@ -39,8 +41,7 @@ public class EditProfileActivity extends AppCompatActivity {
 
     private Button saveButtton;
 
-    private static SharedPreferences prefs;
-    private static SharedPreferences.Editor editor;
+    private SharedPreferenceHelper sharedPreferenceHelper;
 
     @SuppressLint("CommitPrefEdits")
     @Override
@@ -52,17 +53,16 @@ public class EditProfileActivity extends AppCompatActivity {
         String packageName = getPackageName();
 
         // get data from shared preferences
-        prefs = this.getSharedPreferences(packageName, Context.MODE_PRIVATE);
-        editor = prefs.edit();
+        sharedPreferenceHelper = new SharedPreferenceHelper(this, packageName);
 
         // check if shared preferences are exist
-        if(!prefs.contains("name")){
+        if(!sharedPreferenceHelper.check("name")){
             Toast.makeText(EditProfileActivity.this, "shared prefs have not been saved.",
                     Toast.LENGTH_LONG).show();
             Log.w("Edit profile activity", "shared prefs have not been saved");
             Intent myIntent = new Intent(EditProfileActivity.this, WelcomeActivity.class);
             EditProfileActivity.this.startActivity(myIntent);
-        } else if(prefs.getString("name", "").equals("")){
+        } else if(sharedPreferenceHelper.get("name", "").equals("")){
             Toast.makeText(EditProfileActivity.this, "Invalid login. user details not found",
                     Toast.LENGTH_LONG).show();
             Log.w("Edit profile activity", "Invalid login. user details not found");
@@ -70,11 +70,11 @@ public class EditProfileActivity extends AppCompatActivity {
             EditProfileActivity.this.startActivity(myIntent);
         }
 
-        name = prefs.getString("name", "default name");
-        accountType = prefs.getString("accountType", "student");
-        avatarURL = prefs.getString("avatarURL", "");
-        email = prefs.getString("email", "defaultemail@gmail.com");
-        userId = prefs.getString("id", "");
+        name = sharedPreferenceHelper.get("name", "default name");
+        accountType = sharedPreferenceHelper.get("accountType", "student");
+        avatarURL = sharedPreferenceHelper.get("avatarURL", "");
+        email = sharedPreferenceHelper.get("email", "defaultemail@gmail.com");
+        userId = sharedPreferenceHelper.get("id", "");
 
         // get elements
         nametxt = (TextView) findViewById(R.id.name);

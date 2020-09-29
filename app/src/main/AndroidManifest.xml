@@ -12,11 +12,9 @@
         android:theme="@style/AppTheme">
         <activity android:name=".TeacherNavActivity" />
         <activity android:name=".ResourcesActivity" />
-
         <activity
             android:name=".StudentNavActivity"
-            android:parentActivityName=".EditProfileActivity"
-            tools:ignore="Instantiatable">
+            android:parentActivityName=".EditProfileActivity">
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
