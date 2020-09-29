@@ -1,46 +1,16 @@
 package com.shrimali.logic;
 
-import android.content.Context;
-import android.content.SharedPreferences;
-
 public class User {
 
-    String userName;
-    String email;
-    String  firstName;
-    String  lastName;
-    String [] subjects;
-    String school;
-    String mobileNumber;
-    String address;
+    private String userName;
+    private String userEmail;
+    private String userId;
+    private String userAvatar;
+    private int schoolId;
+    private int[] lessons;
 
     public User(){
-        userName = "";
-        email = "";
-        firstName = "";
-        lastName = "";
-        subjects = null;
-        school = "";
-        mobileNumber = "";
-        address = "";
-    }
 
-    public boolean save(){
-
-        if(){
-            SharedPreferences preferences = getSharedPreferences("USER" , Context.MODE_PRIVATE);
-            SharedPreferences.Editor editor = preferences.edit();
-//            Gson gson = new Gson();
-//            String s = gson.toJson(userList);
-//            editor.putString("USER_DATA", s);
-            editor.apply();
-            return true;
-        }else{
-            return false;
-        }
-    }
-
-    private SharedPreferences getSharedPreferences(String user, int modePrivate) {
     }
 
     public String getUserName() {
@@ -51,59 +21,44 @@ public class User {
         this.userName = userName;
     }
 
-    public String getEmail() {
-        return email;
+    public String getUserEmail() {
+        return userEmail;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setUserEmail(String userEmail) {
+        this.userEmail = userEmail;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public String getUserId() {
+        return userId;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getUserAvatar() {
+        return userAvatar;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setUserAvatar(String userAvatar) {
+        this.userAvatar = userAvatar;
     }
 
-    public String[] getSubjects() {
-        return subjects;
+    public int getSchoolId() {
+        return schoolId;
     }
 
-    public void setSubjects(String[] subjects) {
-        this.subjects = subjects;
+    public void setSchoolId(int schoolId) {
+        this.schoolId = schoolId;
     }
 
-    public String getSchool() {
-        return school;
+    public int[] getLessons() {
+        return lessons;
     }
 
-    public void setSchool(String school) {
-        school = school;
+    public void setLessons(int[] lessons) {
+        this.lessons = lessons;
     }
 
-    public String getMobileNumber() {
-        return mobileNumber;
-    }
-
-    public void setMobileNumber(String mobileNumber) {
-        this.mobileNumber = mobileNumber;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
 }

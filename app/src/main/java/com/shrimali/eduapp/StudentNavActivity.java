@@ -13,11 +13,8 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.NavigationUI;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -42,9 +39,8 @@ public class StudentNavActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController( this, R.id.navHostFragment);
         NavigationUI.setupWithNavController(navigationView, navController);
 
-
-//        //Meka dammama saved profile eka wada karannh
-//        Button yourButton = (Button) findViewById(R.id.gotodashboard);
+         //Meka dammama saved profile eka wada karannh
+//        Button yourButton = (Button) findViewById(R.id.goback);
 //
 //        yourButton.setOnClickListener(new View.OnClickListener(){
 //            public void onClick(View v){
@@ -52,8 +48,6 @@ public class StudentNavActivity extends AppCompatActivity {
 //                Toast.makeText(StudentNavActivity.this, "Waiting for profile", Toast.LENGTH_LONG).show();
 //            }
 //        });
+
     }
-
-
-
 }

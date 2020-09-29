@@ -116,7 +116,7 @@ public class WelcomeActivity extends AppCompatActivity {
     public void onStart() {
         super.onStart();
         // Check if user is signed in (non-null) and update UI accordingly.
-        FirebaseUser currentUser = mAuth.getCurrentUser();
+//         FirebaseUser currentUser = mAuth.getCurrentUser();
         signInButton= findViewById(R.id.sign_in_button);
 
         if (currentUser != null) {

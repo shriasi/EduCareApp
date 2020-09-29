@@ -10,18 +10,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".ProfileView"
+            android:label="@string/title_activity_profile_view"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".TeacherNavActivity" />
         <activity android:name=".ResourcesActivity" />
         <activity
             android:name=".StudentNavActivity"
-            android:parentActivityName=".EditProfileActivity">
+            android:parentActivityName=".EditProfileActivity"
+            tools:ignore="Instantiatable">
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".EditProfileActivity" />
         </activity>
-
         <activity
             android:name=".EditProfileActivity"
             android:parentActivityName=".WelcomeActivity">
@@ -39,8 +43,8 @@
             </intent-filter>
         </activity>
     </application>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
     <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
 </manifest>
