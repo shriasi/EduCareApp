@@ -7,25 +7,25 @@
 
     <fragment
         android:id="@+id/menuProfile"
-        android:name="com.asiri.eduappnavigation.ProfileFragment"
+        android:name="com.shrimali.eduapp.ProfileFragment"
         android:label="Profile"
         tools:layout="@layout/fragment_profile"
     />
     <fragment
         android:id="@+id/menuTeachersProfile"
-        android:name="com.asiri.eduappnavigation.teacherProfileFragment"
+        android:name="com.shrimali.eduapp.teacherProfileFragment"
         android:label="Profile"
         tools:layout="@layout/fragment_teacher_profile"
         />
     <fragment
         android:id="@+id/menuChat"
-        android:name="com.asiri.eduappnavigation.ChatFragment"
+        android:name="com.shrimali.eduapp.ChatFragment"
         android:label="Chat"
         tools:layout="@layout/fragment_chat"
         />
     <fragment
         android:id="@+id/menuSettings"
-        android:name="com.asiri.eduappnavigation.SettingsFragment"
+        android:name="com.shrimali.eduapp.SettingsFragment"
         android:label="Chat"
         tools:layout="@layout/fragment_chat"
         />

@@ -1,4 +1,4 @@
-package com.asiri.eduappnavigation;
+package com.shrimali.eduapp;
 
 import org.junit.Test;
 

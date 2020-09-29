@@ -53,12 +53,20 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:431836148286:android:a280a8060a7cdcd814976f",
+        "mobilesdk_app_id": "1:431836148286:android:c35078d0e389102c14976f",
         "android_client_info": {
-          "package_name": "com.asiri.eduappnavigation"
+          "package_name": "com.org.couplify"
         }
       },
       "oauth_client": [
+        {
+          "client_id": "431836148286-fnl39rne61lgrcoctbc7a8fdrbdqi1tp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.org.couplify",
+            "certificate_hash": "6021c75b709eadb3ca0c72e9571ea3e14a8c851c"
+          }
+        },
         {
           "client_id": "431836148286-vccv5tgeil4jqsrn3vfupiq3u4cgf8th.apps.googleusercontent.com",
           "client_type": 3
@@ -82,20 +90,12 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:431836148286:android:c35078d0e389102c14976f",
+        "mobilesdk_app_id": "1:431836148286:android:89ef813e87ea0ab614976f",
         "android_client_info": {
-          "package_name": "com.org.couplify"
+          "package_name": "com.shrimali.eduapp"
         }
       },
       "oauth_client": [
-        {
-          "client_id": "431836148286-fnl39rne61lgrcoctbc7a8fdrbdqi1tp.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.org.couplify",
-            "certificate_hash": "6021c75b709eadb3ca0c72e9571ea3e14a8c851c"
-          }
-        },
         {
           "client_id": "431836148286-vccv5tgeil4jqsrn3vfupiq3u4cgf8th.apps.googleusercontent.com",
           "client_type": 3

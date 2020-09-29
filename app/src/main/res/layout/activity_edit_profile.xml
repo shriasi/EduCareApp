@@ -5,7 +5,7 @@
     android:background="@drawable/backlastnew"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ProfileFragment"
+    tools:context="com.shrimali.eduapp.ProfileFragment"
     android:orientation="vertical">
 
     <LinearLayout
@@ -50,6 +50,7 @@
             android:layout_marginTop="20dp">
 
             <ImageView
+                android:id="@+id/avatar"
                 android:layout_width="wrap_content"
                 android:layout_height="150dp"
                 android:layout_gravity="center_horizontal"
@@ -73,10 +74,12 @@
             <ImageView
                 android:layout_width="36dp"
                 android:layout_height="36dp"
-                android:src="@drawable/ic_baseline_school_24" />
+                android:src="@drawable/ic_baseline_school_24"
+                app:srcCompat="@drawable/ic_baseline_chrome_reader_mode_24" />
 
             <EditText
-                android:layout_width="wrap_content"
+                android:id="@+id/name"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:paddingLeft="20dp"
@@ -95,7 +98,8 @@
                 android:src="@drawable/ic_baseline_school_24" />
 
             <EditText
-                android:layout_width="wrap_content"
+                android:id="@+id/school"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:paddingLeft="20dp"
@@ -115,7 +119,8 @@
                 android:src="@drawable/ic_baseline_grade_24" />
 
             <EditText
-                android:layout_width="wrap_content"
+                android:id="@+id/grade"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:paddingLeft="20dp"
@@ -135,7 +140,8 @@
                 android:src="@drawable/ic_baseline_email_24" />
 
             <EditText
-                android:layout_width="wrap_content"
+                android:id="@+id/email"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:paddingLeft="20dp"
@@ -155,7 +161,8 @@
                 android:src="@drawable/ic_baseline_phone_android_24" />
 
             <EditText
-                android:layout_width="wrap_content"
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:paddingLeft="20dp"
@@ -172,10 +179,12 @@
             <ImageView
                 android:layout_width="36dp"
                 android:layout_height="36dp"
-                android:src="@drawable/ic_baseline_chrome_reader_mode_24" />
+                android:src="@drawable/ic_baseline_chrome_reader_mode_24"
+                app:srcCompat="@drawable/ic_baseline_email_24" />
 
             <EditText
-                android:layout_width="wrap_content"
+                android:id="@+id/address"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:paddingLeft="20dp"
@@ -195,18 +204,28 @@
                 android:src="@drawable/ic_baseline_subject_24" />
 
             <EditText
-                android:layout_width="wrap_content"
+                android:id="@+id/subjects"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:paddingLeft="20dp"
                 android:text="@string/subjects_science_mathematics" />
 
         </LinearLayout>
-        <Button
-            android:id="@+id/savebtn"
-            android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:text="@string/save"
-            android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/savebtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:text="@string/save" />
+        </LinearLayout>
+
     </LinearLayout>
 </FrameLayout>
