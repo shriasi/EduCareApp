@@ -21,6 +21,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.shrimali.logic.DatabaseHelper;
 import com.squareup.picasso.Picasso;
 
 import java.util.Objects;
@@ -48,6 +49,8 @@ public class EditProfileActivity extends AppCompatActivity {
 
     private static SharedPreferences prefs;
     private static SharedPreferences.Editor editor;
+
+//    DatabaseHelper DB;
 
     @SuppressLint("CommitPrefEdits")
     @Override
@@ -84,7 +87,7 @@ public class EditProfileActivity extends AppCompatActivity {
         userId = prefs.getString("id", "");
 
         // get elements
-        nametxt = (TextView) findViewById(R.id.name);
+        nametxt = (TextView) findViewById(R.id.fullname);
         emailtxt = (TextView) findViewById(R.id.email);
         accountTypetxt = (TextView) findViewById(R.id.accountType);
         schooltxt = (TextView) findViewById(R.id.school);

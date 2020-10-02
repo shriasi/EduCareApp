@@ -47,7 +47,7 @@ public class ProfileView extends AppCompatActivity {
         editor = prefs.edit();
 
         // get elements
-        nametxt = (TextView) findViewById(R.id.name);
+        nametxt = (TextView) findViewById(R.id.fullname);
         emailtxt = (TextView) findViewById(R.id.email);
         accountTypetxt = (TextView) findViewById(R.id.accountType);
         schooltxt = (TextView) findViewById(R.id.school);

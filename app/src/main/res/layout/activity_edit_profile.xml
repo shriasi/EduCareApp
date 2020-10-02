@@ -75,15 +75,15 @@
                 android:layout_width="36dp"
                 android:layout_height="36dp"
                 android:src="@drawable/ic_baseline_school_24"
-                app:srcCompat="@drawable/ic_baseline_chrome_reader_mode_24" />
+                 />
 
             <EditText
-                android:id="@+id/name"
+                android:id="@+id/fullname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:paddingLeft="20dp"
-                android:text="Dilini Senevirathna" />
+                android:text="Dilini Senevirathna"/>
 
         </LinearLayout>
         <LinearLayout
@@ -180,8 +180,7 @@
             <ImageView
                 android:layout_width="36dp"
                 android:layout_height="36dp"
-                android:src="@drawable/ic_baseline_chrome_reader_mode_24"
-                app:srcCompat="@drawable/ic_baseline_email_24" />
+                android:src="@drawable/ic_baseline_chrome_reader_mode_24" />
 
             <EditText
                 android:id="@+id/address"
