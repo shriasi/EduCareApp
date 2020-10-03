@@ -1,5 +1,6 @@
-package com.shrimali.logic;
-
-public class Lesson {
-
-}
+//package com.shrimali.logic;
+//
+//public class Lesson {
+//
+//        String  [] lessons;
+//}

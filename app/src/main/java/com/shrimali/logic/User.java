@@ -2,63 +2,53 @@ package com.shrimali.logic;
 
 public class User {
 
-    private String userName;
-    private String userEmail;
-    private String userId;
-    private String userAvatar;
-    private int schoolId;
-    private int[] lessons;
 
-    public User(){
+    String UserSchool;
+    String UserGrade;
+    String UserPhone;
+    String UserAddress;
+    String UserSubjects;
 
+    public User(String userSchool, String userGrade, String userPhone, String userAddress, String userSubjects) {
     }
 
-    public String getUserName() {
-        return userName;
+    public String getUserSchool() {
+        return UserSchool;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setUserSchool(String userSchool) {
+        UserSchool = userSchool;
     }
 
-    public String getUserEmail() {
-        return userEmail;
+    public String getUserGrade() {
+        return UserGrade;
     }
 
-    public void setUserEmail(String userEmail) {
-        this.userEmail = userEmail;
+    public void setUserGrade(String userGrade) {
+        UserGrade = userGrade;
     }
 
-    public String getUserId() {
-        return userId;
+    public String getUserPhone() {
+        return UserPhone;
     }
 
-    public void setUserId(String userId) {
-        this.userId = userId;
+    public void setUserPhone(String userPhone) {
+        UserPhone = userPhone;
     }
 
-    public String getUserAvatar() {
-        return userAvatar;
+    public String getUserAddress() {
+        return UserAddress;
     }
 
-    public void setUserAvatar(String userAvatar) {
-        this.userAvatar = userAvatar;
+    public void setUserAddress(String userAddress) {
+        UserAddress = userAddress;
     }
 
-    public int getSchoolId() {
-        return schoolId;
+    public String getUserSubjects() {
+        return UserSubjects;
     }
 
-    public void setSchoolId(int schoolId) {
-        this.schoolId = schoolId;
+    public void setUserSubjects(String userSubjects) {
+        UserSubjects = userSubjects;
     }
-
-    public int[] getLessons() {
-        return lessons;
-    }
-
-    public void setLessons(int[] lessons) {
-        this.lessons = lessons;
-    }
-
 }

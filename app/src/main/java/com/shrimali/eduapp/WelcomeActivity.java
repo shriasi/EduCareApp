@@ -176,7 +176,7 @@ public class WelcomeActivity extends AppCompatActivity {
                                     Toast.makeText(WelcomeActivity.this, "Welcome Teacher!",
                                             Toast.LENGTH_LONG).show();
                                     // save data in shared preferences and navigate without data
-                                    Intent myIntent = new Intent(WelcomeActivity.this, EditProfileActivity.class);
+                                    Intent myIntent = new Intent(WelcomeActivity.this, UserToEdit.class);
                                     WelcomeActivity.this.startActivity(myIntent);
 
                                 }else{ // for students
@@ -184,7 +184,7 @@ public class WelcomeActivity extends AppCompatActivity {
                                     editor.apply();
                                     Toast.makeText(WelcomeActivity.this, "Welcome Student!",
                                             Toast.LENGTH_LONG).show();
-                                    Intent myIntent = new Intent(WelcomeActivity.this, EditProfileActivity.class);
+                                    Intent myIntent = new Intent(WelcomeActivity.this, UserToEdit.class);
                                     WelcomeActivity.this.startActivity(myIntent);
 
                                 }

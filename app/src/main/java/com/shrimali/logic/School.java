@@ -1,4 +1,4 @@
-package com.shrimali.logic;
-
-public class School {
-}
+//package com.shrimali.logic;
+//
+//public class School {
+//}

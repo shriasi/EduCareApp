@@ -10,24 +10,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".ProfileView"
-            android:label="@string/title_activity_profile_view"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".TeacherNavActivity" />
+
         <activity android:name=".ResourcesActivity" />
         <activity
-            android:name=".StudentNavActivity"
-            android:parentActivityName=".EditProfileActivity"
-            tools:ignore="Instantiatable">
-
+            android:name=".EditProfileActivity"
+            android:parentActivityName=".UserToEdit">
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".EditProfileActivity" />
+                android:value=".UserToEdit" />
         </activity>
+
         <activity
-            android:name=".EditProfileActivity"
+            android:name=".UserToEdit"
             android:parentActivityName=".WelcomeActivity">
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
