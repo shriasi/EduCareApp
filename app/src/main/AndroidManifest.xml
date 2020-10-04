@@ -6,23 +6,63 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="EduCare"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".ResourcesActivity" />
         <activity
-            android:name=".EditProfileActivity"
-            android:parentActivityName=".UserToEdit">
+            android:name=".MemoryMapsActivity"
+            android:parentActivityName=".ResourcesActivity">
+
             <!-- The meta-data tag is required if you support API level 15 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".UserToEdit" />
+                android:value=".ResourcesActivity" />
+        </activity>
+
+
+        <activity
+            android:name=".ResourcesActivity"
+            android:parentActivityName=".MainDashboardActivity">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainDashboardActivity" />
+        </activity>
+
+
+        <activity
+            android:name=".StudentNavActivity"
+            android:parentActivityName=".MainDashboardActivity">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainDashboardActivity" />
         </activity>
 
         <activity
-            android:name=".UserToEdit"
+            android:name=".MainDashboardActivity"
+            android:parentActivityName=".EditProfileActivity">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".EditProfileActivity" />
+        </activity>
+        <activity
+            android:name=".EditProfileActivity"
+            android:parentActivityName=".UserToEditActivity">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".EditProfileActivity" />
+        </activity>
+        <activity
+            android:name=".UserToEditActivity"
             android:parentActivityName=".WelcomeActivity">
 
             <!-- The meta-data tag is required if you support API level 15 and lower -->
@@ -38,8 +78,9 @@
             </intent-filter>
         </activity>
     </application>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
 </manifest>

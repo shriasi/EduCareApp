@@ -39,15 +39,26 @@ public class StudentNavActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController( this, R.id.navHostFragment);
         NavigationUI.setupWithNavController(navigationView, navController);
 
-         //Meka dammama saved profile eka wada karannh
-//        Button yourButton = (Button) findViewById(R.id.goback);
-//
-//        yourButton.setOnClickListener(new View.OnClickListener(){
-//            public void onClick(View v){
-//                startActivity(new Intent(StudentNavActivity.this, MainDashboardActivity.class));
-//                Toast.makeText(StudentNavActivity.this, "Waiting for profile", Toast.LENGTH_LONG).show();
-//            }
-//        });
 
+////        //getting profile details
+////        DatabaseHelper databaseHelper = new DatabaseHelper(this);
+////
+////        TextView name = findViewById(R.id.name);
+////        TextView email = findViewById(R.id.email);
+////        TextView school = findViewById(R.id.school);
+////        TextView grade = findViewById(R.id.grade);
+////        TextView phone= findViewById(R.id.phone);
+//        Button gotodashboard = findViewById(R.id.gotodashboard);
+//
+////
+////        Cursor cursor = databaseHelper.ViewData();
+////
+////        StringBuilder stringBuilder = new StringBuilder();
+////
+//////        while(cursor.moveToNext()){
+//////
+//////            StringBuilder.append(""cursor.getString(1) + "email")
+//////        }
+//////
     }
 }

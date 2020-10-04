@@ -6,7 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 public class MainDashboardActivity extends AppCompatActivity {
 
@@ -15,13 +17,28 @@ public class MainDashboardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_dashboard);
 
-        Button yourButton = (Button) findViewById(R.id.goback);
 
-        yourButton.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                startActivity(new Intent(MainDashboardActivity.this, StudentNavActivity.class));
-                Toast.makeText(MainDashboardActivity.this, "Waiting for profile", Toast.LENGTH_LONG).show();
+        Button GoProfile = findViewById(R.id.GoProfile);
+        Button findresource = findViewById(R.id.findresource);
+
+        //go to profile
+        GoProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainDashboardActivity.this, StudentNavActivity.class);
+                startActivity(intent);
             }
         });
+
+        //To find resource
+        findresource.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainDashboardActivity.this, ResourcesActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
 }

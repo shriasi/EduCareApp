@@ -81,6 +81,7 @@
                     android:src="@drawable/doc3" />
 
                 <TextView
+                    android:id="@+id/ebooks"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
@@ -151,6 +152,7 @@
                     android:src="@drawable/checklist" />
 
                 <TextView
+                    android:id="@+id/modelpapers"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
@@ -221,9 +223,10 @@
                     android:layout_height="75dp"
                     android:src="@drawable/doc3" />
 
-                <TextView
+                <Button
+                    android:id="@+id/memorymaps"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="38dp"
                     android:layout_gravity="center_horizontal"
                     android:text="@string/memory_maps"
                     android:textAlignment="center"

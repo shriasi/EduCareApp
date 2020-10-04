@@ -1,62 +1,69 @@
 package com.shrimali.eduapp;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.ContentValues;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.shrimali.logic.User;
-
+import com.shrimali.logic.DatabaseHelper;
 
 public class EditProfileActivity extends AppCompatActivity {
-    EditText school;
-    EditText email;
-    EditText name;
-    EditText grade;
-    EditText phone;
-    EditText address;
-    EditText subjects;
+    EditText name,school,grade,email,phone,address;
     Button save;
-    DatabaseReference UserDBRef;
+
+    DatabaseHelper databaseHelper;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edit_profile2);
+        setContentView(R.layout.activity_edit_profile);
 
-        school = findViewById(R.id.school);
-        email = findViewById(R.id.email);
         name = findViewById(R.id.name);
+        school = findViewById(R.id.school);
         grade = findViewById(R.id.grade);
+        email = findViewById(R.id.email);
+        address = findViewById(R.id.address);
         phone = findViewById(R.id.phone);
         address = findViewById(R.id.address);
-        subjects = findViewById(R.id.subjects);
+        save = findViewById(R.id.savedata);
 
-        UserDBRef = FirebaseDatabase.getInstance().getReference().child("User");
+        databaseHelper = new DatabaseHelper(this);
 
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                insertUserDetails();
+                String username= name.getText().toString();
+                String userschool = school.getText().toString();
+                String usergrade = school.getText().toString();
+                String useremail = email.getText().toString();
+                String useraddress = address.getText().toString();
+                String userphone = phone.getText().toString();
+
+
+                if(username.length()>1){
+                    ContentValues contentValues = new ContentValues();
+                    contentValues.put("name", username);
+                    contentValues.put("school", userschool);
+                    contentValues.put("grade", usergrade);
+                    contentValues.put("email", useremail);
+                    contentValues.put("address", useraddress);
+                    contentValues.put("phone",  userphone);
+
+                    databaseHelper.insertUser(contentValues);
+                    Intent intent = new Intent(EditProfileActivity.this , MainDashboardActivity.class);
+                    startActivity(intent);
+                    Toast.makeText(EditProfileActivity.this, "Profile data saved!" , Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    Toast.makeText(EditProfileActivity.this, "Enter correct info!" , Toast.LENGTH_SHORT).show();
+                }
             }
         });
-    }
 
-    private void insertUserDetails() {
-
-    String UserSchool = school.getText().toString();
-    String UserGrade = grade.getText().toString();
-    String UserPhone = phone.getText().toString();
-    String UserAddress = address.getText().toString();
-    String UserSubjects = grade.getText().toString();
-
-    User user = new User(UserSchool,UserGrade,UserPhone,UserAddress,UserSubjects);
-
-        UserDBRef.push().setValue(user);
-        Toast.makeText(EditProfileActivity.this, "Success!" , Toast.LENGTH_SHORT).show();
     }
 }

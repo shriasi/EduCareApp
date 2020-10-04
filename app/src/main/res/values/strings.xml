@@ -58,4 +58,9 @@
     <string name="hi_please_edit_your_profile_to_proceed">Hi Please Edit your profile to proceed!</string>
     <string name="go_to_edit_profile">Go to edit profile!</string>
     <string name="hi_please_edit_your_profile_to_continue">Hi please Edit your profile to continue!</string>
+    <string name="action_settings">Action Settings</string>
+    <string name="dashboard_items">Dashboard Items</string>
+    <string name="find_a_teacher">find a teacher</string>
+    <string name="find_a_resource">Find a resource</string>
+    <string name="manage_notes">Manage Notes</string>
 </resources>
